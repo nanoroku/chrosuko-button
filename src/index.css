@@ -1,0 +1,60 @@
+:root {
+  --bg-color: #ffe6f2;
+  /* Light pink background */
+  --text-color: #555555;
+  --primary-color: #ff66b2;
+  /* Hot pink */
+  --secondary-color: #ff99cc;
+  --button-hover: #ffccdd;
+  --grid-gap: 15px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  overflow-y: auto;
+}
+
+#root {
+  width: 100%;
+  max-width: 600px;
+  /* Reduced max-width for single column mobile-like feel */
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 0px #fff;
+}
+
+.chrosuko-icon {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #fff;
+  box-shadow: 0 5px 15px rgba(255, 102, 178, 0.4);
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+}
+
+.chrosuko-icon:hover {
+  transform: scale(1.05) rotate(5deg);
+}
+
+.sound-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* Single column */
+  gap: var(--grid-gap);
+  padding: 10px;
+}
