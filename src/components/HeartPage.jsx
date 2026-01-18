@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import defaultButtonBg from '../images/long_b-tb028-pinkA.png';
 import buttonConfig from '../assets/button_config.json'; // Import config
 import '../components/SoundButton.css'; // Reuse existing button styles
+import './HeartPage.css';
+
 
 const HeartPage = () => {
     // Dynamic assets for Heart Page
